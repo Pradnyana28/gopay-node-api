@@ -1,0 +1,37 @@
+{
+  "name": "gopay-node-api",
+  "version": "1.0.0",
+  "description": "Gopay by GoTo Node.js SDK",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:ci": "npm run test -- --coverage",
+    "build": "rm -rf dist && tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pradnyana28/gopay-node-api.git"
+  },
+  "keywords": [
+    "gopay node sdk",
+    "gopay sdk",
+    "gojek gopay"
+  ],
+  "author": "I Kadek Pradnyana",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pradnyana28/gopay-node-api/issues"
+  },
+  "homepage": "https://github.com/Pradnyana28/gopay-node-api#readme",
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "@types/sinon": "^10.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "^8.1.0",
+    "jest": "^27.3.1",
+    "sinon": "^11.1.2",
+    "ts-jest": "^27.0.7",
+    "typescript": "^4.4.4"
+  }
+}
