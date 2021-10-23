@@ -7,19 +7,14 @@ parser: "@typescript-eslint/parser"
 plugins:
   - "@typescript-eslint"
 extends:
-  - "airbnb-base"
+  - "eslint:recommended"
+  - "plugin:@typescript-eslint/eslint-recommended"
+  - "plugin:@typescript-eslint/recommended"
 globals:
   Atomics: "readonly"
   SharedArrayBuffer: "readonly"
 ignorePatterns:
-  - build/*
   - dist/*
-  - src/assets/*
-  - src/cloudformation/*
-  - src/swagger/*
-  - src/serverless/*
-  - src/data/*
-  - src/templates/*
 parserOptions:
   ecmaVersion: 2018
   sourceType: "module"
@@ -43,12 +38,6 @@ settings:
 rules:
   import/extensions: "off"
   import/no-unresolved: "off"
-  import/no-extraneous-dependencies:
-    - "error"
-    - devDependencies:
-        - "**/*.spec.ts"
-        - "jest-*-config.js"
-        - tests/**
   import/prefer-default-export: "off"
   comma-dangle: "off"
   class-methods-use-this: "off"

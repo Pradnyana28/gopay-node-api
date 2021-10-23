@@ -6,6 +6,7 @@
   "scripts": {
     "test": "jest",
     "test:ci": "npm run test -- --coverage",
+    "tslint": "eslint src/**/*.ts",
     "build": "rm -rf dist && tsc"
   },
   "repository": {

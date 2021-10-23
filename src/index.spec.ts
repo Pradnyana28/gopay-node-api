@@ -1,7 +1,7 @@
-import { hi } from "index"
+import { hi } from "index";
 
 describe("initiate package", () => {
   it("should successfully run the package", async () => {
-    expect(hi()).toEqual("gopay")
-  })
-})
+    expect(hi()).toEqual("gopay");
+  });
+});
